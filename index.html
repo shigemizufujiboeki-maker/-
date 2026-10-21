@@ -298,7 +298,7 @@ async function checkOffline(){
  if(!window.isSecureContext||!('serviceWorker' in navigator)){out.textContent='未準備：HTTPSで開く必要があります';return;}
  try{
   await navigator.serviceWorker.ready;
-  const cached=await caches.open('guangzhou-fob-cache-v17');
+  const cached=await caches.open('guangzhou-fob-cache-v18');
   const checks=await Promise.all(['./index.html','./manifest.webmanifest','./icon.svg'].map(x=>cached.match(x)));
   out.textContent=checks.every(Boolean)?'キャッシュ確認済み。Safariで一度再読み込みし、機内モードで再起動してください（実機テストが必要）':'準備中：初回読み込み完了までオンラインで開いてください';
  }catch(err){out.textContent='確認できません：Safariの設定やHTTPS公開状態を確認してください'}
