@@ -1,4 +1,4 @@
-const CACHE='guangzhou-fob-cache-v35';
+const CACHE='guangzhou-fob-cache-v36';
 const CORE=['./index.html','./manifest.webmanifest','./icon.svg','./'];
 self.addEventListener('install',event=>event.waitUntil((async()=>{
  const cache=await caches.open(CACHE);
