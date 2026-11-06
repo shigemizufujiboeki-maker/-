@@ -1,0 +1,1 @@
+{"name": "FOB AI商談ノート 試験版", "short_name": "商談ノート試験版", "description": "オフラインで写真・商談メモ保存とFOB下代試算", "start_url": "./index.html", "scope": "./", "display": "standalone", "background_color": "#f4f7fa", "theme_color": "#143247", "icons": [{"src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}]}
